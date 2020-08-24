@@ -1,4 +1,4 @@
 class SightingSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :created_at, :bird, :locations
+  attributes :created_at, :bird, :location
 end
