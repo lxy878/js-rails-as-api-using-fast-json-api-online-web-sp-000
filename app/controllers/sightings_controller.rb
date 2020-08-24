@@ -10,6 +10,6 @@ class SightingsController < ApplicationController
     options = {
       include: [:bird, :location]
     }
-    render json: SightingSerializer.new(sighting, options)
+    render json: SightingSerializer.new(sighting, options).serialized_json
   end
 end
